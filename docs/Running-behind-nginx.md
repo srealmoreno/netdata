@@ -172,6 +172,7 @@ the following parameters in your `nginx.conf`
 ```conf
 proxy_set_header X-Forwarded-Proto https;
 proxy_pass https://localhost:19999;
+proxy_ssl_protocols TLSv1.3;
 ```
 
 Optionally it is also possible to [enable TLS/SSL on Nginx](http://nginx.org/en/docs/http/configuring_https_servers.html), this way the user will encrypt not only the communication between Nginx and Netdata but also between the user and Nginx.
